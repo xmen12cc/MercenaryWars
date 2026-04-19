@@ -15,5 +15,5 @@ MonoBehaviour:
   weaponName: Pistol
   damage: 10
   fireRate: 0.3
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 8859143028999779329, guid: 86e972298ace8b74587670c03da127bc, type: 3}
   ammoType: 0
