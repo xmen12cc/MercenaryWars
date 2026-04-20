@@ -86,6 +86,22 @@ namespace MercenaryWars.Managers
         }
 
         /// <summary>
+        /// Load next scene by build index.
+        /// </summary>
+        public void LoadNextLevel()
+        {
+            int nextIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            if (nextIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(nextIndex);
+            }
+            else
+            {
+                LoadMainMenu();
+            }
+        }
+
+        /// <summary>
         /// Handle game over logic.
         /// </summary>
         private void TriggerGameOver()
